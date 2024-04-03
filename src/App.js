@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+// import Propuser from './components/Propuser';
+import Pomodor from './components/Pomodor';
+
+// import Usestateuse from './components/Usestateuse';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {/* <Propuser   name='palak' age='22' email='makwanapalak123@gmail.com'/> */}
+    {/* <Usestateuse/> */}
+   
+    <Pomodor/>
+   
     </div>
   );
 }

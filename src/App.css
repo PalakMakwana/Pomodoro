@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+body {
+    background-color: #81b29a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainContainer {
+    text-align: center;
+    color: #3d405b;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.buttoncontainer2 {
+    display: flex;
+    border-radius: none;
+    background-color: none;
+    justify-content: space-evenly;
+    width: 700px;
+    height: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.startbtn,
+.stopbtn,
+.Resetbtn {
+    text-align: center;
+    margin-top: 13px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 20px;
+    outline: #f4f1f1;
+    color: #1e052d;
+}
+.settingsBtn{
+    margin-top: 1px;
+    margin-left: 90%;
+    cursor: pointer;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 20px;
+        outline: #f4f1f1;
+    color: #1e052d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Resetbtn:hover,
+.stopbtn:hover,
+.startbtn:hover,
+.settingsBtn:hover {
+    border-radius: 50px;
+    color: azure;
+}
+
+.button1 {
+    border-radius: 40px;
+    align-items: center;
+    font-size: 50px;
+    background-color: #0f7aac;
+    justify-content: space-between;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 20px 5px #01d5dc;
+}
+
+.button1:hover {
+    box-shadow: 0 0 20px 5px #01d5dc;
+    border-radius: 50px;
+    color: azure;
+}
+
+.buttoncontainer1 {
+    display: flex;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+    height: 40px;
+}
+
+.button {
+    border-radius: 40px;
+    align-items: center;
+    font-size: 20px;
+    background-color: #00868e;
+    justify-content: space-between;
+    width: 300px;
+    height: 50px;
+}
+
+.focus,
+.break,
+.longbreak {
+    text-align: center;
+    margin-top: 13px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #1e052d;
+    font-size: 20px;
+    outline: none;
+}
+
+.focus:hover,
+.break:hover,
+.longbreak:hover {
+    border-radius: 50px;
+    color: azure;
+}
+
+.manual-input {
+    display: flex;
+    justify-content: center;
+   
+    margin-top: 20px;
+    width: 100px;
+    height: 3s0px;
+    font-size: 20px;
+    color: #1c422d;
+    border-radius: 20px;
+}
+
+.manual-btn {
+    display: flex;
+    font-size: 20px;
+
+    text-align: center;
+    margin-top: 13px;
+    justify-content: center;
+    cursor: pointer;
+    width: 170px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+.mnaul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.container111{
+    width: 450px;
+    height: 290px;
+    margin-top: 20px;
+    margin-left: 130px;
+}
+.settingsBtn:hover {
+    border-radius: 50px;
+    color: azure;
+}
+
+.barcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+
+.time2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-left: 190px;
+    margin-top: 40px;
+    background-color: #0f7aac;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    color: #f4f1f1;
+    box-shadow: 0 0 20px 5px #01d5dc;
+    font-size: 50px;
+}
+
+.CircularProgressbar {
+    width: 100%;
+    height: 100%;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+    stroke: #6fcf97;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+    stroke: transparent;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+    fill: #f4f1f1;
+    font-size: 50px;
+  
+    text-anchor: middle;
 }
